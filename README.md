@@ -1,3 +1,3 @@
 # task-golang
-Rizky Dharma Sanjaya
+Rizky Dharma Sanjaya -
 Banking System Academy
