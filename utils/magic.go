@@ -4,7 +4,6 @@ func MagicSum(n int) int {
 	return n + n
 }
 
-// MagicPow takes an integer and returns n raised to the power of n
 func MagicPow(n int) int {
 	result := 1
 	for i := 0; i < n; i++ {
@@ -13,12 +12,10 @@ func MagicPow(n int) int {
 	return result
 }
 
-// MagicOdd takes an integer and returns true if it is an odd number
 func MagicOdd(n int) bool {
 	return n%2 != 0
 }
 
-// MagicGrade returns a string representing the grade based on the input number
 func MagicGrade(n int) string {
 	switch n {
 	case 0:
@@ -38,7 +35,6 @@ func MagicGrade(n int) string {
 	}
 }
 
-// MagicName returns a slice of strings containing the name repeated n times
 func MagicName(n int) []string {
 	names := []string{}
 	for i := 0; i < n; i++ {
@@ -47,7 +43,6 @@ func MagicName(n int) []string {
 	return names
 }
 
-// MagicTria returns the sum of numbers from 1 to n
 func MagicTria(n int) int {
 	sum := 0
 	for i := 1; i <= n; i++ {
@@ -56,7 +51,14 @@ func MagicTria(n int) int {
 	return sum
 }
 
-// MagicChange modifies the input integer by doubling its value
 func MagicChange(n *int) {
-	*n = *n * 2
+	*n *= 2
+}
+
+type MagicNumber struct {
+	Number int
+}
+
+func (m *MagicNumber) Multiply(n int) {
+	m.Number *= n
 }
