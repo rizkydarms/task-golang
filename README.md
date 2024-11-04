@@ -1,2 +1,3 @@
 # task-golang
-BSA
+Rizky Dharma Sanjaya
+Banking System Academy
